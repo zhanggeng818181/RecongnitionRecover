@@ -1,0 +1,712 @@
+{
+  "window": 6,
+  "subset_frame": 78,
+  "source_episode": 4,
+  "source_frame": 153,
+  "joints_rad": [
+    -0.9061529040336609,
+    0.46674391627311707,
+    2.027916669845581,
+    1.2634499073028564,
+    -0.8129110932350159,
+    -0.6572851538658142
+  ],
+  "flange_xyz_base_m": [
+    0.842838704586029,
+    -0.8099403977394104,
+    0.9280738234519958
+  ],
+  "camera_results": {
+    "cam9": {
+      "status": "intent_available",
+      "image_sha256": "e28f5e40f623cbeba29c0086f24ed70845edd911933677f842c35297a1f51ed4",
+      "instance_count": 22,
+      "ranked_instances": [
+        {
+          "instance": 21,
+          "score": 0.7481759786605835,
+          "area_px": 9906,
+          "valid_points": 8418,
+          "median_range_m": 0.640419602394104,
+          "median_z_m": 0.44910740852355957,
+          "range_p10_p90_m": [
+            0.4743119925260544,
+            0.8989524245262146
+          ],
+          "touches_border": true
+        },
+        {
+          "instance": 10,
+          "score": 0.8997005820274353,
+          "area_px": 1491,
+          "valid_points": 1140,
+          "median_range_m": 0.8946791291236877,
+          "median_z_m": 0.6596195697784424,
+          "range_p10_p90_m": [
+            0.795053768157959,
+            0.9913480520248413
+          ],
+          "touches_border": false
+        },
+        {
+          "instance": 20,
+          "score": 0.6497727632522583,
+          "area_px": 450,
+          "valid_points": 245,
+          "median_range_m": 1.0672565698623657,
+          "median_z_m": 0.9811690449714661,
+          "range_p10_p90_m": [
+            0.9478154301643371,
+            1.2191921710968017
+          ],
+          "touches_border": false
+        },
+        {
+          "instance": 0,
+          "score": 0.36984264850616455,
+          "area_px": 489,
+          "valid_points": 262,
+          "median_range_m": 1.072887659072876,
+          "median_z_m": 0.9867234230041504,
+          "range_p10_p90_m": [
+            0.949464476108551,
+            1.2179707765579224
+          ],
+          "touches_border": false
+        },
+        {
+          "instance": 8,
+          "score": 0.45208629965782166,
+          "area_px": 292,
+          "valid_points": 141,
+          "median_range_m": 1.145621657371521,
+          "median_z_m": 0.4957454800605774,
+          "range_p10_p90_m": [
+            1.1012409925460815,
+            1.1909916400909424
+          ],
+          "touches_border": false
+        },
+        {
+          "instance": 14,
+          "score": 0.6519888043403625,
+          "area_px": 235,
+          "valid_points": 106,
+          "median_range_m": 1.228792667388916,
+          "median_z_m": 1.1374599933624268,
+          "range_p10_p90_m": [
+            1.1758422255516052,
+            1.3070646524429321
+          ],
+          "touches_border": false
+        },
+        {
+          "instance": 15,
+          "score": 0.6983358263969421,
+          "area_px": 2811,
+          "valid_points": 2325,
+          "median_range_m": 1.2636524438858032,
+          "median_z_m": 0.6679611802101135,
+          "range_p10_p90_m": [
+            1.1190814256668091,
+            1.4039775133132935
+          ],
+          "touches_border": true
+        },
+        {
+          "instance": 2,
+          "score": 0.6012734770774841,
+          "area_px": 1757,
+          "valid_points": 1168,
+          "median_range_m": 1.318310260772705,
+          "median_z_m": 0.903535008430481,
+          "range_p10_p90_m": [
+            1.074800980091095,
+            1.5593875646591187
+          ],
+          "touches_border": false
+        },
+        {
+          "instance": 16,
+          "score": 0.7392610907554626,
+          "area_px": 1337,
+          "valid_points": 926,
+          "median_range_m": 1.370195984840393,
+          "median_z_m": 0.8807424902915955,
+          "range_p10_p90_m": [
+            1.2341501116752625,
+            1.5839250087738037
+          ],
+          "touches_border": false
+        },
+        {
+          "instance": 12,
+          "score": 0.6056501865386963,
+          "area_px": 411,
+          "valid_points": 243,
+          "median_range_m": 1.4008901119232178,
+          "median_z_m": 0.8069561123847961,
+          "range_p10_p90_m": [
+            1.30733482837677,
+            1.494544506072998
+          ],
+          "touches_border": false
+        },
+        {
+          "instance": 9,
+          "score": 0.8564290404319763,
+          "area_px": 1143,
+          "valid_points": 795,
+          "median_range_m": 1.422275424003601,
+          "median_z_m": 1.0537779331207275,
+          "range_p10_p90_m": [
+            1.3610119819641113,
+            1.5283249855041503
+          ],
+          "touches_border": false
+        },
+        {
+          "instance": 18,
+          "score": 0.6685023903846741,
+          "area_px": 395,
+          "valid_points": 215,
+          "median_range_m": 1.548006534576416,
+          "median_z_m": 0.7086953520774841,
+          "range_p10_p90_m": [
+            1.4593214750289918,
+            1.6368168830871581
+          ],
+          "touches_border": false
+        },
+        {
+          "instance": 6,
+          "score": 0.3676840364933014,
+          "area_px": 130,
+          "valid_points": 34,
+          "median_range_m": 1.5639331340789795,
+          "median_z_m": 1.3545238971710205,
+          "range_p10_p90_m": [
+            1.5393773198127747,
+            1.5978445529937744
+          ],
+          "touches_border": false
+        },
+        {
+          "instance": 4,
+          "score": 0.9087647795677185,
+          "area_px": 3596,
+          "valid_points": 3039,
+          "median_range_m": 1.5849785804748535,
+          "median_z_m": 0.7331492304801941,
+          "range_p10_p90_m": [
+            1.521193528175354,
+            1.8515979290008546
+          ],
+          "touches_border": false
+        },
+        {
+          "instance": 17,
+          "score": 0.3312034606933594,
+          "area_px": 291,
+          "valid_points": 84,
+          "median_range_m": 1.587064504623413,
+          "median_z_m": 1.363726258277893,
+          "range_p10_p90_m": [
+            1.4993467926979065,
+            1.7001938223838806
+          ],
+          "touches_border": false
+        },
+        {
+          "instance": 11,
+          "score": 0.3128771483898163,
+          "area_px": 198,
+          "valid_points": 46,
+          "median_range_m": 1.7763793468475342,
+          "median_z_m": 1.0771533250808716,
+          "range_p10_p90_m": [
+            1.7282160520553589,
+            1.843900740146637
+          ],
+          "touches_border": false
+        },
+        {
+          "instance": 13,
+          "score": 0.44336843490600586,
+          "area_px": 847,
+          "valid_points": 524,
+          "median_range_m": 1.8571460247039795,
+          "median_z_m": 1.050299048423767,
+          "range_p10_p90_m": [
+            1.765164887905121,
+            2.068931221961975
+          ],
+          "touches_border": false
+        },
+        {
+          "instance": 7,
+          "score": 0.8754688501358032,
+          "area_px": 2715,
+          "valid_points": 2213,
+          "median_range_m": 1.9111498594284058,
+          "median_z_m": 0.7678852081298828,
+          "range_p10_p90_m": [
+            1.7741643190383911,
+            2.0648869037628175
+          ],
+          "touches_border": true
+        },
+        {
+          "instance": 5,
+          "score": 0.33044707775115967,
+          "area_px": 460,
+          "valid_points": 262,
+          "median_range_m": 2.0645766258239746,
+          "median_z_m": 1.0407795906066895,
+          "range_p10_p90_m": [
+            1.9955135941505433,
+            2.1285091638565063
+          ],
+          "touches_border": false
+        },
+        {
+          "instance": 1,
+          "score": 0.3643994927406311,
+          "area_px": 632,
+          "valid_points": 360,
+          "median_range_m": 2.078372001647949,
+          "median_z_m": 1.0292165279388428,
+          "range_p10_p90_m": [
+            1.9990301251411438,
+            2.1883997440338137
+          ],
+          "touches_border": false
+        },
+        {
+          "instance": 19,
+          "score": 0.4887515604496002,
+          "area_px": 743,
+          "valid_points": 409,
+          "median_range_m": 2.086557149887085,
+          "median_z_m": 1.0280115604400635,
+          "range_p10_p90_m": [
+            2.0041192054748533,
+            2.351808404922485
+          ],
+          "touches_border": true
+        },
+        {
+          "instance": 3,
+          "score": 0.3294758200645447,
+          "area_px": 322,
+          "valid_points": 84,
+          "median_range_m": 2.1171953678131104,
+          "median_z_m": 1.0371170043945312,
+          "range_p10_p90_m": [
+            1.9632500052452087,
+            2.2967247486114504
+          ],
+          "touches_border": false
+        }
+      ],
+      "intent": {
+        "instance": 21,
+        "score": 0.7481759786605835,
+        "area_px": 9906,
+        "valid_points": 8418,
+        "median_range_m": 0.640419602394104,
+        "median_z_m": 0.44910740852355957,
+        "range_p10_p90_m": [
+          0.4743119925260544,
+          0.8989524245262146
+        ],
+        "touches_border": true
+      },
+      "frame_id": "cam9_optical_frame",
+      "projection_rotation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "plane_or_pose_rejection": "plane inlier ratio 0.661 below 0.75"
+    },
+    "cam10": {
+      "status": "no_instances",
+      "image_sha256": "0e411e53f768295e769ed212477d0e7fc74388d1b46cd8e4c3820c51452ac667",
+      "instance_count": 0
+    }
+  },
+  "robot_motion_ready": false,
+  "intent": {
+    "status": "provisional_nearest_camera_instance",
+    "candidates": [
+      {
+        "camera": "cam9",
+        "instance": 21,
+        "score": 0.7481759786605835,
+        "area_px": 9906,
+        "valid_points": 8418,
+        "median_range_m": 0.640419602394104,
+        "median_z_m": 0.44910740852355957,
+        "range_p10_p90_m": [
+          0.4743119925260544,
+          0.8989524245262146
+        ],
+        "touches_border": true
+      }
+    ],
+    "selected": {
+      "camera": "cam9",
+      "instance": 21,
+      "score": 0.7481759786605835,
+      "area_px": 9906,
+      "valid_points": 8418,
+      "median_range_m": 0.640419602394104,
+      "median_z_m": 0.44910740852355957,
+      "range_p10_p90_m": [
+        0.4743119925260544,
+        0.8989524245262146
+      ],
+      "touches_border": true
+    },
+    "cross_camera_same_object_verified": false,
+    "cross_camera_metric_scale_verified": false
+  },
+  "selected_rule_result": {
+    "status": "intent_available",
+    "image_sha256": "e28f5e40f623cbeba29c0086f24ed70845edd911933677f842c35297a1f51ed4",
+    "instance_count": 22,
+    "ranked_instances": [
+      {
+        "instance": 21,
+        "score": 0.7481759786605835,
+        "area_px": 9906,
+        "valid_points": 8418,
+        "median_range_m": 0.640419602394104,
+        "median_z_m": 0.44910740852355957,
+        "range_p10_p90_m": [
+          0.4743119925260544,
+          0.8989524245262146
+        ],
+        "touches_border": true
+      },
+      {
+        "instance": 10,
+        "score": 0.8997005820274353,
+        "area_px": 1491,
+        "valid_points": 1140,
+        "median_range_m": 0.8946791291236877,
+        "median_z_m": 0.6596195697784424,
+        "range_p10_p90_m": [
+          0.795053768157959,
+          0.9913480520248413
+        ],
+        "touches_border": false
+      },
+      {
+        "instance": 20,
+        "score": 0.6497727632522583,
+        "area_px": 450,
+        "valid_points": 245,
+        "median_range_m": 1.0672565698623657,
+        "median_z_m": 0.9811690449714661,
+        "range_p10_p90_m": [
+          0.9478154301643371,
+          1.2191921710968017
+        ],
+        "touches_border": false
+      },
+      {
+        "instance": 0,
+        "score": 0.36984264850616455,
+        "area_px": 489,
+        "valid_points": 262,
+        "median_range_m": 1.072887659072876,
+        "median_z_m": 0.9867234230041504,
+        "range_p10_p90_m": [
+          0.949464476108551,
+          1.2179707765579224
+        ],
+        "touches_border": false
+      },
+      {
+        "instance": 8,
+        "score": 0.45208629965782166,
+        "area_px": 292,
+        "valid_points": 141,
+        "median_range_m": 1.145621657371521,
+        "median_z_m": 0.4957454800605774,
+        "range_p10_p90_m": [
+          1.1012409925460815,
+          1.1909916400909424
+        ],
+        "touches_border": false
+      },
+      {
+        "instance": 14,
+        "score": 0.6519888043403625,
+        "area_px": 235,
+        "valid_points": 106,
+        "median_range_m": 1.228792667388916,
+        "median_z_m": 1.1374599933624268,
+        "range_p10_p90_m": [
+          1.1758422255516052,
+          1.3070646524429321
+        ],
+        "touches_border": false
+      },
+      {
+        "instance": 15,
+        "score": 0.6983358263969421,
+        "area_px": 2811,
+        "valid_points": 2325,
+        "median_range_m": 1.2636524438858032,
+        "median_z_m": 0.6679611802101135,
+        "range_p10_p90_m": [
+          1.1190814256668091,
+          1.4039775133132935
+        ],
+        "touches_border": true
+      },
+      {
+        "instance": 2,
+        "score": 0.6012734770774841,
+        "area_px": 1757,
+        "valid_points": 1168,
+        "median_range_m": 1.318310260772705,
+        "median_z_m": 0.903535008430481,
+        "range_p10_p90_m": [
+          1.074800980091095,
+          1.5593875646591187
+        ],
+        "touches_border": false
+      },
+      {
+        "instance": 16,
+        "score": 0.7392610907554626,
+        "area_px": 1337,
+        "valid_points": 926,
+        "median_range_m": 1.370195984840393,
+        "median_z_m": 0.8807424902915955,
+        "range_p10_p90_m": [
+          1.2341501116752625,
+          1.5839250087738037
+        ],
+        "touches_border": false
+      },
+      {
+        "instance": 12,
+        "score": 0.6056501865386963,
+        "area_px": 411,
+        "valid_points": 243,
+        "median_range_m": 1.4008901119232178,
+        "median_z_m": 0.8069561123847961,
+        "range_p10_p90_m": [
+          1.30733482837677,
+          1.494544506072998
+        ],
+        "touches_border": false
+      },
+      {
+        "instance": 9,
+        "score": 0.8564290404319763,
+        "area_px": 1143,
+        "valid_points": 795,
+        "median_range_m": 1.422275424003601,
+        "median_z_m": 1.0537779331207275,
+        "range_p10_p90_m": [
+          1.3610119819641113,
+          1.5283249855041503
+        ],
+        "touches_border": false
+      },
+      {
+        "instance": 18,
+        "score": 0.6685023903846741,
+        "area_px": 395,
+        "valid_points": 215,
+        "median_range_m": 1.548006534576416,
+        "median_z_m": 0.7086953520774841,
+        "range_p10_p90_m": [
+          1.4593214750289918,
+          1.6368168830871581
+        ],
+        "touches_border": false
+      },
+      {
+        "instance": 6,
+        "score": 0.3676840364933014,
+        "area_px": 130,
+        "valid_points": 34,
+        "median_range_m": 1.5639331340789795,
+        "median_z_m": 1.3545238971710205,
+        "range_p10_p90_m": [
+          1.5393773198127747,
+          1.5978445529937744
+        ],
+        "touches_border": false
+      },
+      {
+        "instance": 4,
+        "score": 0.9087647795677185,
+        "area_px": 3596,
+        "valid_points": 3039,
+        "median_range_m": 1.5849785804748535,
+        "median_z_m": 0.7331492304801941,
+        "range_p10_p90_m": [
+          1.521193528175354,
+          1.8515979290008546
+        ],
+        "touches_border": false
+      },
+      {
+        "instance": 17,
+        "score": 0.3312034606933594,
+        "area_px": 291,
+        "valid_points": 84,
+        "median_range_m": 1.587064504623413,
+        "median_z_m": 1.363726258277893,
+        "range_p10_p90_m": [
+          1.4993467926979065,
+          1.7001938223838806
+        ],
+        "touches_border": false
+      },
+      {
+        "instance": 11,
+        "score": 0.3128771483898163,
+        "area_px": 198,
+        "valid_points": 46,
+        "median_range_m": 1.7763793468475342,
+        "median_z_m": 1.0771533250808716,
+        "range_p10_p90_m": [
+          1.7282160520553589,
+          1.843900740146637
+        ],
+        "touches_border": false
+      },
+      {
+        "instance": 13,
+        "score": 0.44336843490600586,
+        "area_px": 847,
+        "valid_points": 524,
+        "median_range_m": 1.8571460247039795,
+        "median_z_m": 1.050299048423767,
+        "range_p10_p90_m": [
+          1.765164887905121,
+          2.068931221961975
+        ],
+        "touches_border": false
+      },
+      {
+        "instance": 7,
+        "score": 0.8754688501358032,
+        "area_px": 2715,
+        "valid_points": 2213,
+        "median_range_m": 1.9111498594284058,
+        "median_z_m": 0.7678852081298828,
+        "range_p10_p90_m": [
+          1.7741643190383911,
+          2.0648869037628175
+        ],
+        "touches_border": true
+      },
+      {
+        "instance": 5,
+        "score": 0.33044707775115967,
+        "area_px": 460,
+        "valid_points": 262,
+        "median_range_m": 2.0645766258239746,
+        "median_z_m": 1.0407795906066895,
+        "range_p10_p90_m": [
+          1.9955135941505433,
+          2.1285091638565063
+        ],
+        "touches_border": false
+      },
+      {
+        "instance": 1,
+        "score": 0.3643994927406311,
+        "area_px": 632,
+        "valid_points": 360,
+        "median_range_m": 2.078372001647949,
+        "median_z_m": 1.0292165279388428,
+        "range_p10_p90_m": [
+          1.9990301251411438,
+          2.1883997440338137
+        ],
+        "touches_border": false
+      },
+      {
+        "instance": 19,
+        "score": 0.4887515604496002,
+        "area_px": 743,
+        "valid_points": 409,
+        "median_range_m": 2.086557149887085,
+        "median_z_m": 1.0280115604400635,
+        "range_p10_p90_m": [
+          2.0041192054748533,
+          2.351808404922485
+        ],
+        "touches_border": true
+      },
+      {
+        "instance": 3,
+        "score": 0.3294758200645447,
+        "area_px": 322,
+        "valid_points": 84,
+        "median_range_m": 2.1171953678131104,
+        "median_z_m": 1.0371170043945312,
+        "range_p10_p90_m": [
+          1.9632500052452087,
+          2.2967247486114504
+        ],
+        "touches_border": false
+      }
+    ],
+    "intent": {
+      "instance": 21,
+      "score": 0.7481759786605835,
+      "area_px": 9906,
+      "valid_points": 8418,
+      "median_range_m": 0.640419602394104,
+      "median_z_m": 0.44910740852355957,
+      "range_p10_p90_m": [
+        0.4743119925260544,
+        0.8989524245262146
+      ],
+      "touches_border": true
+    },
+    "frame_id": "cam9_optical_frame",
+    "projection_rotation": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "plane_or_pose_rejection": "plane inlier ratio 0.661 below 0.75"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "source_path": "/home/seene/CalibSim/SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/urdf/SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM.urdf",
+  "sha256": "a662deacc98652c5a2c64b141bb05911a5d265a8b0e3a17a7c1210fcd267da4f",
+  "robot_name": "SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM",
+  "purpose": "kinematics reference; visual mesh assets remain in original CAD export",
+  "joints": [
+    {
+      "name": "wheel_fl_y",
+      "type": "revolute",
+      "parent": "base_link",
+      "child": "wheel_fl_y_Link"
+    },
+    {
+      "name": "wheel_fl_p",
+      "type": "revolute",
+      "parent": "wheel_fl_y_Link",
+      "child": "wheel_fl_p_Link"
+    },
+    {
+      "name": "wheel_bl_y",
+      "type": "revolute",
+      "parent": "base_link",
+      "child": "wheel_bl_y_Link"
+    },
+    {
+      "name": "wheel_bl_p",
+      "type": "revolute",
+      "parent": "wheel_bl_y_Link",
+      "child": "wheel_bl_p_Link"
+    },
+    {
+      "name": "wheel_br_y",
+      "type": "revolute",
+      "parent": "base_link",
+      "child": "wheel_br_y_Link"
+    },
+    {
+      "name": "wheel_br_p",
+      "type": "revolute",
+      "parent": "wheel_br_y_Link",
+      "child": "wheel_br_p_Link"
+    },
+    {
+      "name": "wheel_fr_y",
+      "type": "revolute",
+      "parent": "base_link",
+      "child": "wheel_fr_y_Link"
+    },
+    {
+      "name": "wheel_fr_p",
+      "type": "revolute",
+      "parent": "wheel_fr_y_Link",
+      "child": "wheel_fr_p_Link"
+    },
+    {
+      "name": "shoulder_y",
+      "type": "revolute",
+      "parent": "base_link",
+      "child": "shoulder_Link"
+    },
+    {
+      "name": "upper_arm_p",
+      "type": "revolute",
+      "parent": "shoulder_Link",
+      "child": "upper_arm_Link"
+    },
+    {
+      "name": "elbow_p",
+      "type": "revolute",
+      "parent": "upper_arm_Link",
+      "child": "elbow_Link"
+    },
+    {
+      "name": "lower_arm_y",
+      "type": "revolute",
+      "parent": "elbow_Link",
+      "child": "lower_arm_Link"
+    },
+    {
+      "name": "wrist_p",
+      "type": "revolute",
+      "parent": "lower_arm_Link",
+      "child": "wrist_Link"
+    },
+    {
+      "name": "flange_y",
+      "type": "revolute",
+      "parent": "wrist_Link",
+      "child": "flange_Link"
+    },
+    {
+      "name": "solenoid_valve_Link",
+      "type": "fixed",
+      "parent": "flange_Link",
+      "child": "solenoid_valve_Link"
+    },
+    {
+      "name": "suction_cup_Link",
+      "type": "fixed",
+      "parent": "flange_Link",
+      "child": "suction_cup_Link"
+    },
+    {
+      "name": "perception_cam_6_Link",
+      "type": "fixed",
+      "parent": "flange_Link",
+      "child": "perception_cam_6_Link"
+    },
+    {
+      "name": "perception_cam_7_Link",
+      "type": "fixed",
+      "parent": "flange_Link",
+      "child": "perception_cam_7_Link"
+    },
+    {
+      "name": "mast_Link",
+      "type": "revolute",
+      "parent": "shoulder_Link",
+      "child": "mast_Link"
+    },
+    {
+      "name": "perception_sensors_link",
+      "type": "fixed",
+      "parent": "mast_Link",
+      "child": "perception_sensors_link"
+    },
+    {
+      "name": "perception_cam_1_link",
+      "type": "fixed",
+      "parent": "perception_sensors_link",
+      "child": "perception_cam_1_link"
+    },
+    {
+      "name": "perception_cam_2_link",
+      "type": "fixed",
+      "parent": "perception_sensors_link",
+      "child": "perception_cam_2_link"
+    },
+    {
+      "name": "perception_cam_3_link",
+      "type": "fixed",
+      "parent": "perception_sensors_link",
+      "child": "perception_cam_3_link"
+    },
+    {
+      "name": "perception_cam_4_link",
+      "type": "fixed",
+      "parent": "perception_sensors_link",
+      "child": "perception_cam_4_link"
+    },
+    {
+      "name": "perception_cam_5_link",
+      "type": "fixed",
+      "parent": "perception_sensors_link",
+      "child": "perception_cam_5_link"
+    },
+    {
+      "name": "perception_lidar_hesai_1_link",
+      "type": "fixed",
+      "parent": "perception_sensors_link",
+      "child": "perception_lidar_hesai_1_link"
+    },
+    {
+      "name": "perception_cam_8_link",
+      "type": "fixed",
+      "parent": "shoulder_Link",
+      "child": "perception_cam_8_link"
+    }
+  ]
+}

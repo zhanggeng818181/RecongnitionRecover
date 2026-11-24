@@ -1,0 +1,1553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.7.5-sw2025-surface-picking-row-highlight.1  Build Version: 1.7.5.0
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0149689646149355 -0.000815522806563097 0.276940593377173"
+        rpy="0 0 0" />
+      <mass
+        value="128.333230320268" />
+      <inertia
+        ixx="9.1189477926444"
+        ixy="0.372019833471028"
+        ixz="1.11301396308639"
+        iyy="5.51552710131672"
+        iyz="0.0921426654601004"
+        izz="11.7773289776974" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="wheel_fl_y_Link">
+    <inertial>
+      <origin
+        xyz="-1.0897484448158E-06 0.027879957628184 0.0451657950722915"
+        rpy="0 0 0" />
+      <mass
+        value="3.99465463013248" />
+      <inertia
+        ixx="0.0133464404119191"
+        ixy="2.44862837733961E-08"
+        ixz="5.30258168293524E-08"
+        iyy="0.0135735183238347"
+        iyz="0.000704136670119048"
+        izz="0.00967237507464675" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/wheel_fl_y_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/wheel_fl_y_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_fl_y"
+    type="revolute">
+    <origin
+      xyz="0.34 0.256 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_fl_y_Link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="wheel_fl_p_Link">
+    <inertial>
+      <origin
+        xyz="9.27685209539675E-07 -0.00396982278882202 2.80524279416827E-07"
+        rpy="0 0 0" />
+      <mass
+        value="3.46213664816346" />
+      <inertia
+        ixx="0.00709182977314365"
+        ixy="-1.74199681578045E-08"
+        ixz="-1.76436838286101E-07"
+        iyy="0.0129038038712123"
+        iyz="-2.2408236774525E-08"
+        izz="0.00709217221978087" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/wheel_fl_p_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/wheel_fl_p_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_fl_p"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="wheel_fl_y_Link" />
+    <child
+      link="wheel_fl_p_Link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="wheel_bl_y_Link">
+    <inertial>
+      <origin
+        xyz="-1.08989624436617E-06 0.0278799575952142 0.0451657949992602"
+        rpy="0 0 0" />
+      <mass
+        value="3.99465464517318" />
+      <inertia
+        ixx="0.0133464404234483"
+        ixy="2.44846637159287E-08"
+        ixz="5.30095983800868E-08"
+        iyy="0.0135735183589311"
+        iyz="0.000704136668798653"
+        izz="0.009672375098696" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/wheel_bl_y_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/wheel_bl_y_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_bl_y"
+    type="revolute">
+    <origin
+      xyz="-0.34 0.256 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_bl_y_Link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="wheel_bl_p_Link">
+    <inertial>
+      <origin
+        xyz="8.88602681159423E-07 -0.00396982278882196 3.86883696384954E-07"
+        rpy="0 0 0" />
+      <mass
+        value="3.46213664816347" />
+      <inertia
+        ixx="0.00709187534315291"
+        ixy="-1.46854813363918E-08"
+        ixz="-2.1132588243098E-07"
+        iyy="0.0129038038712123"
+        iyz="-2.42882894410225E-08"
+        izz="0.00709212664977165" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/wheel_bl_p_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/wheel_bl_p_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_bl_p"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="wheel_bl_y_Link" />
+    <child
+      link="wheel_bl_p_Link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="wheel_br_y_Link">
+    <inertial>
+      <origin
+        xyz="1.08974931628536E-06 -0.027879957625837 0.0451657950788175"
+        rpy="0 0 0" />
+      <mass
+        value="3.99465462978319" />
+      <inertia
+        ixx="0.0133464404116806"
+        ixy="2.44862550703562E-08"
+        ixz="-5.302572702337E-08"
+        iyy="0.0135735183235819"
+        iyz="-0.000704136670189277"
+        izz="0.00967237507458791" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/wheel_br_y_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/wheel_br_y_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_br_y"
+    type="revolute">
+    <origin
+      xyz="-0.340000000000005 -0.255999999999991 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_br_y_Link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="wheel_br_p_Link">
+    <inertial>
+      <origin
+        xyz="-9.00028346406678E-07 0.00396982278882213 3.59503400895744E-07"
+        rpy="0 0 0" />
+      <mass
+        value="3.46213664816346" />
+      <inertia
+        ixx="0.00709186264782"
+        ixy="-1.54220345488711E-08"
+        ixz="2.03241324351161E-07"
+        iyy="0.0129038038712123"
+        iyz="2.38274047344388E-08"
+        izz="0.00709213934510454" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/wheel_br_p_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/wheel_br_p_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_br_p"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="wheel_br_y_Link" />
+    <child
+      link="wheel_br_p_Link" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="wheel_fr_y_Link">
+    <inertial>
+      <origin
+        xyz="1.08989537239701E-06 -0.0278799575975615 0.0451657949927354"
+        rpy="0 0 0" />
+      <mass
+        value="3.99465464552306" />
+      <inertia
+        ixx="0.0133464404236869"
+        ixy="2.44846924031706E-08"
+        ixz="-5.30096880314549E-08"
+        iyy="0.013573518359184"
+        iyz="-0.000704136668728727"
+        izz="0.00967237509875486" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/wheel_fr_y_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/wheel_fr_y_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_fr_y"
+    type="revolute">
+    <origin
+      xyz="0.34 -0.256 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_fr_y_Link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="wheel_fr_p_Link">
+    <inertial>
+      <origin
+        xyz="-9.60684233441977E-07 0.00396982278882196 1.27982510908509E-07"
+        rpy="0 0 0" />
+      <mass
+        value="3.46213664816346" />
+      <inertia
+        ixx="0.00709178268995574"
+        ixy="-2.07908868249148E-08"
+        ixz="1.13091343391546E-07"
+        iyy="0.0129038038712123"
+        iyz="1.93215783767527E-08"
+        izz="0.00709221930296879" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/wheel_fr_p_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/wheel_fr_p_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_fr_p"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="wheel_fr_y_Link" />
+    <child
+      link="wheel_fr_p_Link" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="shoulder_Link">
+    <inertial>
+      <origin
+        xyz="0.0326787142802638 -0.0227793228397568 0.19890030895453"
+        rpy="0 0 0" />
+      <mass
+        value="12.3267009857805" />
+      <inertia
+        ixx="0.207499080958293"
+        ixy="0.000407029742524739"
+        ixz="-0.0353252202183367"
+        iyy="0.262329881176246"
+        iyz="-0.0269990910437453"
+        izz="0.174187367385726" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/shoulder_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/shoulder_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="shoulder_y"
+    type="revolute">
+    <origin
+      xyz="0 0 0.509107490819241"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="shoulder_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="upper_arm_Link">
+    <inertial>
+      <origin
+        xyz="-0.00719664702845002 -0.0207250905879102 0.237558950906687"
+        rpy="0 0 0" />
+      <mass
+        value="15.0815439213296" />
+      <inertia
+        ixx="0.308647165603069"
+        ixy="3.39448435667992E-05"
+        ixz="4.08530168019933E-07"
+        iyy="0.301629700484944"
+        iyz="-0.00248585112448092"
+        izz="0.0936886523810464" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/upper_arm_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/upper_arm_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="upper_arm_p"
+    type="revolute">
+    <origin
+      xyz="0.16 0 0.415892509180758"
+      rpy="0 0 0" />
+    <parent
+      link="shoulder_Link" />
+    <child
+      link="upper_arm_Link" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.4"
+      upper="2.62"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="elbow_Link">
+    <inertial>
+      <origin
+        xyz="-0.102993427307361 -0.0818360377018315 0.140475112913797"
+        rpy="0 0 0" />
+      <mass
+        value="8.59027624989829" />
+      <inertia
+        ixx="0.0604729814859233"
+        ixy="0.000679366452204444"
+        ixz="0.023702436925796"
+        iyy="0.0909108586517202"
+        iyz="-0.000821420097599584"
+        izz="0.0432366213223289" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/elbow_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/elbow_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="elbow_p"
+    type="revolute">
+    <origin
+      xyz="0 0 0.779997490819395"
+      rpy="0 0 0" />
+    <parent
+      link="upper_arm_Link" />
+    <child
+      link="elbow_Link" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.05"
+      upper="2.83"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="lower_arm_Link">
+    <inertial>
+      <origin
+        xyz="-0.019347 -0.0028329 -0.20434"
+        rpy="0 0 0" />
+      <mass
+        value="5.7324" />
+      <inertia
+        ixx="0.062552"
+        ixy="6.1001E-07"
+        ixz="-1.7759E-06"
+        iyy="0.060682"
+        iyz="-2.488E-05"
+        izz="0.014178" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/lower_arm_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/lower_arm_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lower_arm_y"
+    type="revolute">
+    <origin
+      xyz="-0.15 0 0.78"
+      rpy="0 0 0" />
+    <parent
+      link="elbow_Link" />
+    <child
+      link="lower_arm_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="wrist_Link">
+    <inertial>
+      <origin
+        xyz="-2.85421628803614E-06 -0.0344902698463589 0.131770631910553"
+        rpy="0 0 0" />
+      <mass
+        value="2.41375486397253" />
+      <inertia
+        ixx="0.00905030775677296"
+        ixy="-1.98937424559985E-07"
+        ixz="-1.33381388917416E-06"
+        iyy="0.00985069506453502"
+        iyz="-7.41457136046244E-06"
+        izz="0.00424010701384246" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/wrist_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/wrist_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wrist_p"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="lower_arm_Link" />
+    <child
+      link="wrist_Link" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-2.26"
+      upper="2.26"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="flange_Link">
+    <inertial>
+      <origin
+        xyz="-1.42350789251299E-05 -7.36708781967056E-05 0.0344316654408505"
+        rpy="0 0 0" />
+      <mass
+        value="5.17857495444302" />
+      <inertia
+        ixx="0.0762940090906613"
+        ixy="1.74011649751995E-06"
+        ixz="-1.28697902155992E-06"
+        iyy="0.0228111114006964"
+        iyz="8.68033517624409E-07"
+        izz="0.0981684177167613" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/flange_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/flange_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="flange_y"
+    type="revolute">
+    <origin
+      xyz="8.30753166865296E-05 -6.80971368529359E-05 0.237499807309987"
+      rpy="0 0 0" />
+    <parent
+      link="wrist_Link" />
+    <child
+      link="flange_Link" />
+    <axis
+      xyz="-6.06617424888621E-05 0 0.999999998160076" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="solenoid_valve_Link">
+    <inertial>
+      <origin
+        xyz="-0.00026447 0.0080894 -0.061856"
+        rpy="0 0 0" />
+      <mass
+        value="0.23217" />
+      <inertia
+        ixx="0.00010015"
+        ixy="-5.1875E-09"
+        ixz="-6.0276E-07"
+        iyy="0.00010792"
+        iyz="1.0826E-06"
+        izz="8.0196E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/solenoid_valve_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.68627 0.68627 0.68627 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/solenoid_valve_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="solenoid_valve_Link"
+    type="fixed">
+    <origin
+      xyz="0 0.087999999956539 -0.00220000016372435"
+      rpy="0 0 0" />
+    <parent
+      link="flange_Link" />
+    <child
+      link="solenoid_valve_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="suction_cup_Link">
+    <inertial>
+      <origin
+        xyz="-6.71404741466736E-07 -8.70947373737222E-11 0.0110659282920182"
+        rpy="0 0 0" />
+      <mass
+        value="0.0736223970144863" />
+      <inertia
+        ixx="6.98849603730602E-06"
+        ixy="1.16342108298921E-09"
+        ixz="1.37006463859868E-10"
+        iyy="6.98546170480846E-06"
+        iyz="8.21361302805981E-14"
+        izz="4.73033699625961E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/suction_cup_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/suction_cup_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="suction_cup_Link"
+    type="fixed">
+    <origin
+      xyz="0 0 0.0604999998886844"
+      rpy="0 0 0" />
+    <parent
+      link="flange_Link" />
+    <child
+      link="suction_cup_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="perception_cam_6_Link">
+    <inertial>
+      <origin
+        xyz="1.2021E-10 -0.011481 -0.016104"
+        rpy="0 0 0" />
+      <mass
+        value="0.62125" />
+      <inertia
+        ixx="0.00029642"
+        ixy="-3.4174E-08"
+        ixz="-3.2045E-11"
+        iyy="0.00039061"
+        iyz="-6.2137E-05"
+        izz="0.00054754" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/perception_cam_6_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/perception_cam_6_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="perception_cam_6_Link"
+    type="fixed">
+    <origin
+      xyz="0.14394 0 0.048509"
+      rpy="6.0662E-05 0 -1.5708" />
+    <parent
+      link="flange_Link" />
+    <child
+      link="perception_cam_6_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="perception_cam_7_Link">
+    <inertial>
+      <origin
+        xyz="1.2048E-10 -0.011481 -0.016104"
+        rpy="0 0 0" />
+      <mass
+        value="0.62125" />
+      <inertia
+        ixx="0.00029642"
+        ixy="-3.4174E-08"
+        ixz="-3.2045E-11"
+        iyy="0.00039061"
+        iyz="-6.2137E-05"
+        izz="0.00054754" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/perception_cam_7_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/perception_cam_7_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="perception_cam_7_Link"
+    type="fixed">
+    <origin
+      xyz="-0.143947071748246 0 0.0484912680090215"
+      rpy="-6.06617424961045E-05 0 1.57082775517598" />
+    <parent
+      link="flange_Link" />
+    <child
+      link="perception_cam_7_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="mast_Link">
+    <inertial>
+      <origin
+        xyz="-0.00404686859636347 -5.69980875575471E-06 0.413840421544518"
+        rpy="0 0 0" />
+      <mass
+        value="2.36155864545063" />
+      <inertia
+        ixx="0.160615952870648"
+        ixy="-1.46605068364834E-07"
+        ixz="-9.61131959949127E-06"
+        iyy="0.160111473766006"
+        iyz="-7.48973800741942E-06"
+        izz="0.0041955247987038" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/mast_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/mast_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mast_Link"
+    type="revolute">
+    <origin
+      xyz="0 0.2205 0.29589"
+      rpy="0 0 0" />
+    <parent
+      link="shoulder_Link" />
+    <child
+      link="mast_Link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="perception_sensors_link">
+    <inertial>
+      <origin
+        xyz="-0.000750330119830385 0.00024145239266779 0.10872411669228"
+        rpy="0 0 0" />
+      <mass
+        value="1.76394651304868" />
+      <inertia
+        ixx="0.00643107182925977"
+        ixy="1.10915605043808E-05"
+        ixz="1.6045220350894E-05"
+        iyy="0.006431416599709"
+        iyz="1.10989115906E-05"
+        izz="0.00436163030139167" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/perception_sensors_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/perception_sensors_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="perception_sensors_link"
+    type="fixed">
+    <origin
+      xyz="0 0 0.83097"
+      rpy="0 0 0" />
+    <parent
+      link="mast_Link" />
+    <child
+      link="perception_sensors_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="perception_cam_1_link">
+    <inertial>
+      <origin
+        xyz="1.16961684337724E-07 -0.000112746259201879 -0.00733051288151556"
+        rpy="0 0 0" />
+      <mass
+        value="0.0116825011413796" />
+      <inertia
+        ixx="1.24649675931842E-06"
+        ixy="-4.38165628496134E-09"
+        ixz="1.98484701534859E-12"
+        iyy="1.254565851682E-06"
+        iyz="2.45753658359187E-09"
+        izz="1.77157470418969E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/perception_cam_1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/perception_cam_1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="perception_cam_1_link"
+    type="fixed">
+    <origin
+      xyz="0.0639999999999961 0.0499905155161577 0.0455440679391077"
+      rpy="-1.57079632679489 0 -1.5707963267949" />
+    <parent
+      link="perception_sensors_link" />
+    <child
+      link="perception_cam_1_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="perception_cam_2_link">
+    <inertial>
+      <origin
+        xyz="1.75899809162772E-08 -0.000112746318563728 -0.00733051288179494"
+        rpy="0 0 0" />
+      <mass
+        value="0.0116825011415338" />
+      <inertia
+        ixx="1.2464890418362E-06"
+        ixy="-4.3745375904098E-09"
+        ixz="4.15085533461789E-12"
+        iyy="1.25457356917561E-06"
+        iyz="2.45753387998758E-09"
+        izz="1.77157470418925E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/perception_cam_2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/perception_cam_2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="perception_cam_2_link"
+    type="fixed">
+    <origin
+      xyz="0.0639999999999961 -0.0500077217355474 0.0454999999999979"
+      rpy="-1.57079632679489 0 -1.5707963267949" />
+    <parent
+      link="perception_sensors_link" />
+    <child
+      link="perception_cam_2_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="perception_cam_3_link">
+    <inertial>
+      <origin
+        xyz="1.7589981059898E-08 -0.000112746318562396 -0.00733051288179498"
+        rpy="0 0 0" />
+      <mass
+        value="0.0116825011415339" />
+      <inertia
+        ixx="1.24648904183621E-06"
+        ixy="-4.37453759040362E-09"
+        ixz="4.15085533865869E-12"
+        iyy="1.2545735691756E-06"
+        iyz="2.45753387996063E-09"
+        izz="1.77157470418926E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/perception_cam_3_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/perception_cam_3_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="perception_cam_3_link"
+    type="fixed">
+    <origin
+      xyz="0 -0.0640047599255039 0.0454999999999997"
+      rpy="-1.5707963267949 0 -3.14159265358979" />
+    <parent
+      link="perception_sensors_link" />
+    <child
+      link="perception_cam_3_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="perception_cam_4_link">
+    <inertial>
+      <origin
+        xyz="5.0464E-08 -8.5605E-06 -0.0065195"
+        rpy="0 0 0" />
+      <mass
+        value="0.011025" />
+      <inertia
+        ixx="1.2344E-06"
+        ixy="-4.3881E-09"
+        ixz="4.6684E-13"
+        iyy="1.2388E-06"
+        iyz="2.2454E-09"
+        izz="1.7587E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/perception_cam_4_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/perception_cam_4_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="perception_cam_4_link"
+    type="fixed">
+    <origin
+      xyz="-0.0640000000000031 0 0.0454999999999981"
+      rpy="-1.57079632679491 0 1.5707963267949" />
+    <parent
+      link="perception_sensors_link" />
+    <child
+      link="perception_cam_4_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="perception_cam_5_link">
+    <inertial>
+      <origin
+        xyz="1.75899806047536E-08 -0.000112746318562618 -0.00733051288179487"
+        rpy="0 0 0" />
+      <mass
+        value="0.0116825011415339" />
+      <inertia
+        ixx="1.24648904183621E-06"
+        ixy="-4.37453759040102E-09"
+        ixz="4.15085532418476E-12"
+        iyy="1.25457356917562E-06"
+        iyz="2.45753387997888E-09"
+        izz="1.77157470418928E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/perception_cam_5_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/perception_cam_5_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="perception_cam_5_link"
+    type="fixed">
+    <origin
+      xyz="0 0.0639952400745793 0.0454999999999981"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="perception_sensors_link" />
+    <child
+      link="perception_cam_5_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="perception_lidar_hesai_1_link">
+    <inertial>
+      <origin
+        xyz="-3.8594E-05 5.9049E-05 0.089476"
+        rpy="0 0 0" />
+      <mass
+        value="29.735" />
+      <inertia
+        ixx="0.4587"
+        ixy="1.9723E-06"
+        ixz="-7.0633E-07"
+        iyy="0.45875"
+        iyz="3.0733E-08"
+        izz="0.71307" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/perception_lidar_hesai_1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/perception_lidar_hesai_1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="perception_lidar_hesai_1_link"
+    type="fixed">
+    <origin
+      xyz="0 0 0.308659999999999"
+      rpy="-3.14159265358979 0 0" />
+    <parent
+      link="perception_sensors_link" />
+    <child
+      link="perception_lidar_hesai_1_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="perception_cam_8_link">
+    <inertial>
+      <origin
+        xyz="1.7585E-08 -0.00011275 -0.0073305"
+        rpy="0 0 0" />
+      <mass
+        value="0.011683" />
+      <inertia
+        ixx="1.2465E-06"
+        ixy="-4.3745E-09"
+        ixz="4.1509E-12"
+        iyy="1.2546E-06"
+        iyz="2.4575E-09"
+        izz="1.7716E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/perception_cam_8_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SE01-A0-000 Sculptor EVT样机_URDF（简化）_0910.SLDASM/meshes/perception_cam_8_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="perception_cam_8_link"
+    type="fixed">
+    <origin
+      xyz="0.215 0 0.18589"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="shoulder_Link" />
+    <child
+      link="perception_cam_8_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

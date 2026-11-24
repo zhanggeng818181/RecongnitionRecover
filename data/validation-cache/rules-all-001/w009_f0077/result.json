@@ -1,0 +1,218 @@
+{
+  "window": 9,
+  "subset_frame": 77,
+  "source_episode": 10,
+  "source_frame": 184,
+  "joints_rad": [
+    0.2821280062198639,
+    0.20889681577682495,
+    1.542475938796997,
+    0.7608695030212402,
+    -0.3528801202774048,
+    -0.6362650394439697
+  ],
+  "flange_xyz_base_m": [
+    1.256276249885559,
+    0.4231749176979065,
+    1.5970051288604736
+  ],
+  "camera_results": {
+    "cam9": {
+      "status": "intent_available",
+      "image_sha256": "23b5223a711b7740d3c95444003e53ca72ffa6aeaae0d24baeb495aefe576651",
+      "instance_count": 3,
+      "ranked_instances": [
+        {
+          "instance": 0,
+          "score": 0.38800421357154846,
+          "area_px": 26373,
+          "valid_points": 22855,
+          "median_range_m": 0.3168394863605499,
+          "median_z_m": 0.17468634247779846,
+          "range_p10_p90_m": [
+            0.2282682329416275,
+            0.48712105154991153
+          ],
+          "touches_border": false
+        },
+        {
+          "instance": 1,
+          "score": 0.3164075016975403,
+          "area_px": 1654,
+          "valid_points": 896,
+          "median_range_m": 0.5694653391838074,
+          "median_z_m": 0.4787212014198303,
+          "range_p10_p90_m": [
+            0.5212059319019318,
+            0.716938704252243
+          ],
+          "touches_border": false
+        },
+        {
+          "instance": 2,
+          "score": 0.3531729578971863,
+          "area_px": 1387,
+          "valid_points": 1022,
+          "median_range_m": 1.1060007810592651,
+          "median_z_m": 0.5974297523498535,
+          "range_p10_p90_m": [
+            1.0425068616867066,
+            1.3568743824958802
+          ],
+          "touches_border": true
+        }
+      ],
+      "intent": {
+        "instance": 0,
+        "score": 0.38800421357154846,
+        "area_px": 26373,
+        "valid_points": 22855,
+        "median_range_m": 0.3168394863605499,
+        "median_z_m": 0.17468634247779846,
+        "range_p10_p90_m": [
+          0.2282682329416275,
+          0.48712105154991153
+        ],
+        "touches_border": false
+      },
+      "frame_id": "cam9_optical_frame",
+      "projection_rotation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "plane_or_pose_rejection": "plane inlier ratio 0.351 below 0.75"
+    },
+    "cam10": {
+      "status": "no_instances",
+      "image_sha256": "3dd24aebd17c06f8b7500c16094d93c6fa6db5c7676bcf21b4ae7d474e30e259",
+      "instance_count": 0
+    }
+  },
+  "robot_motion_ready": false,
+  "intent": {
+    "status": "provisional_nearest_camera_instance",
+    "candidates": [
+      {
+        "camera": "cam9",
+        "instance": 0,
+        "score": 0.38800421357154846,
+        "area_px": 26373,
+        "valid_points": 22855,
+        "median_range_m": 0.3168394863605499,
+        "median_z_m": 0.17468634247779846,
+        "range_p10_p90_m": [
+          0.2282682329416275,
+          0.48712105154991153
+        ],
+        "touches_border": false
+      }
+    ],
+    "selected": {
+      "camera": "cam9",
+      "instance": 0,
+      "score": 0.38800421357154846,
+      "area_px": 26373,
+      "valid_points": 22855,
+      "median_range_m": 0.3168394863605499,
+      "median_z_m": 0.17468634247779846,
+      "range_p10_p90_m": [
+        0.2282682329416275,
+        0.48712105154991153
+      ],
+      "touches_border": false
+    },
+    "cross_camera_same_object_verified": false,
+    "cross_camera_metric_scale_verified": false
+  },
+  "selected_rule_result": {
+    "status": "intent_available",
+    "image_sha256": "23b5223a711b7740d3c95444003e53ca72ffa6aeaae0d24baeb495aefe576651",
+    "instance_count": 3,
+    "ranked_instances": [
+      {
+        "instance": 0,
+        "score": 0.38800421357154846,
+        "area_px": 26373,
+        "valid_points": 22855,
+        "median_range_m": 0.3168394863605499,
+        "median_z_m": 0.17468634247779846,
+        "range_p10_p90_m": [
+          0.2282682329416275,
+          0.48712105154991153
+        ],
+        "touches_border": false
+      },
+      {
+        "instance": 1,
+        "score": 0.3164075016975403,
+        "area_px": 1654,
+        "valid_points": 896,
+        "median_range_m": 0.5694653391838074,
+        "median_z_m": 0.4787212014198303,
+        "range_p10_p90_m": [
+          0.5212059319019318,
+          0.716938704252243
+        ],
+        "touches_border": false
+      },
+      {
+        "instance": 2,
+        "score": 0.3531729578971863,
+        "area_px": 1387,
+        "valid_points": 1022,
+        "median_range_m": 1.1060007810592651,
+        "median_z_m": 0.5974297523498535,
+        "range_p10_p90_m": [
+          1.0425068616867066,
+          1.3568743824958802
+        ],
+        "touches_border": true
+      }
+    ],
+    "intent": {
+      "instance": 0,
+      "score": 0.38800421357154846,
+      "area_px": 26373,
+      "valid_points": 22855,
+      "median_range_m": 0.3168394863605499,
+      "median_z_m": 0.17468634247779846,
+      "range_p10_p90_m": [
+        0.2282682329416275,
+        0.48712105154991153
+      ],
+      "touches_border": false
+    },
+    "frame_id": "cam9_optical_frame",
+    "projection_rotation": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "plane_or_pose_rejection": "plane inlier ratio 0.351 below 0.75"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "sam3_deployment": {
+    "url": "https://github.com/seen-e/sam3-deployment.git",
+    "commit": "ee20af06ed39a38caca9eab12438865cc63c00c8",
+    "local_path": "third_party/sam3-deployment",
+    "engine_sha256": {
+      "decoder.engine": "f830e2aaad0d53cfc32454fb384a9b4d94341dc2d7905ed4fc2537b2b95ac0c8",
+      "text_encoder.engine": "f793009fbb08a63f99847b74a7570306bc2503b0576bc9cc1e7b054138e607e6",
+      "vision_encoder.engine": "732bf859e8ac3cef627bb3d85ef767585c3605638a9b81171d07ccc66fc2c170"
+    }
+  },
+  "moge2": {
+    "url": "https://github.com/microsoft/MoGe.git",
+    "commit": "07444410f1e33f402353b99d6ccd26bd31e469e8",
+    "local_path": "third_party/MoGe",
+    "checkpoint": "Ruicheng/moge-2-vitl",
+    "checkpoint_revision": "39c4d5e957afe587e04eec59dc2bcc3be5ecd968",
+    "checkpoint_sha256": "3eefd4abb2102f38f12b2d1992e5ff15e4923e5431c67dd494afe157e0111cd5",
+    "note": "MoGe v2 code before MoGe-3 dependencies; weights must be downloaded separately"
+  }
+}

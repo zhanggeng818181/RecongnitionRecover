@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cam10-suction-alignment"
+version = "0.2.0"
+description = "cam10 RGB/depth fusion, best-reference capture and EVT suction pose proposals"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "opencv-python>=4.8", "scipy>=1.10"]
+
+[project.optional-dependencies]
+models = ["torch>=2.5", "tokenizers>=0.20", "Pillow>=9"]
+
+[project.scripts]
+cam10-align = "cam10_alignment.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["cam10_alignment*"]

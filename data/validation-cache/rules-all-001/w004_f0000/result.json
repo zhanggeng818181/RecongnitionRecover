@@ -1,0 +1,244 @@
+{
+  "window": 4,
+  "subset_frame": 0,
+  "source_episode": 2,
+  "source_frame": 160,
+  "joints_rad": [
+    -0.2521556615829468,
+    1.0474212169647217,
+    1.900321364402771,
+    0.03255787119269371,
+    -0.1513315737247467,
+    -0.2712905704975128
+  ],
+  "flange_xyz_base_m": [
+    1.1071912050247192,
+    -0.28412002325057983,
+    0.3410685062408447
+  ],
+  "camera_results": {
+    "cam9": {
+      "status": "no_instances",
+      "image_sha256": "64ce9c55b16524c2bbf7feee5384ab652b107a08ac05550f986c7eba26db202e",
+      "instance_count": 0
+    },
+    "cam10": {
+      "status": "intent_available",
+      "image_sha256": "7af962f74e92b824e89908e3a2a7896ca5805874ea2b5c4e44a54a0e69d5732a",
+      "instance_count": 4,
+      "ranked_instances": [
+        {
+          "instance": 1,
+          "score": 0.4519434869289398,
+          "area_px": 10046,
+          "valid_points": 8766,
+          "median_range_m": 0.4140627980232239,
+          "median_z_m": 0.1853438913822174,
+          "range_p10_p90_m": [
+            0.2821955233812332,
+            0.6136390864849091
+          ],
+          "touches_border": true
+        },
+        {
+          "instance": 0,
+          "score": 0.7091149687767029,
+          "area_px": 13758,
+          "valid_points": 12355,
+          "median_range_m": 0.41693541407585144,
+          "median_z_m": 0.2779470682144165,
+          "range_p10_p90_m": [
+            0.2898666739463806,
+            0.6155160665512085
+          ],
+          "touches_border": false
+        },
+        {
+          "instance": 2,
+          "score": 0.6767575144767761,
+          "area_px": 10635,
+          "valid_points": 9284,
+          "median_range_m": 0.604149341583252,
+          "median_z_m": 0.3768264055252075,
+          "range_p10_p90_m": [
+            0.5224314510822297,
+            0.8022553443908691
+          ],
+          "touches_border": false
+        },
+        {
+          "instance": 3,
+          "score": 0.6901054978370667,
+          "area_px": 6070,
+          "valid_points": 5354,
+          "median_range_m": 1.0138177871704102,
+          "median_z_m": 0.5599265098571777,
+          "range_p10_p90_m": [
+            0.7465752422809601,
+            1.3730791091918946
+          ],
+          "touches_border": true
+        }
+      ],
+      "intent": {
+        "instance": 1,
+        "score": 0.4519434869289398,
+        "area_px": 10046,
+        "valid_points": 8766,
+        "median_range_m": 0.4140627980232239,
+        "median_z_m": 0.1853438913822174,
+        "range_p10_p90_m": [
+          0.2821955233812332,
+          0.6136390864849091
+        ],
+        "touches_border": true
+      },
+      "frame_id": "cam10_optical_frame",
+      "projection_rotation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "plane_or_pose_rejection": "plane inlier ratio 0.568 below 0.75"
+    }
+  },
+  "robot_motion_ready": false,
+  "intent": {
+    "status": "provisional_nearest_camera_instance",
+    "candidates": [
+      {
+        "camera": "cam10",
+        "instance": 1,
+        "score": 0.4519434869289398,
+        "area_px": 10046,
+        "valid_points": 8766,
+        "median_range_m": 0.4140627980232239,
+        "median_z_m": 0.1853438913822174,
+        "range_p10_p90_m": [
+          0.2821955233812332,
+          0.6136390864849091
+        ],
+        "touches_border": true
+      }
+    ],
+    "selected": {
+      "camera": "cam10",
+      "instance": 1,
+      "score": 0.4519434869289398,
+      "area_px": 10046,
+      "valid_points": 8766,
+      "median_range_m": 0.4140627980232239,
+      "median_z_m": 0.1853438913822174,
+      "range_p10_p90_m": [
+        0.2821955233812332,
+        0.6136390864849091
+      ],
+      "touches_border": true
+    },
+    "cross_camera_same_object_verified": false,
+    "cross_camera_metric_scale_verified": false
+  },
+  "selected_rule_result": {
+    "status": "intent_available",
+    "image_sha256": "7af962f74e92b824e89908e3a2a7896ca5805874ea2b5c4e44a54a0e69d5732a",
+    "instance_count": 4,
+    "ranked_instances": [
+      {
+        "instance": 1,
+        "score": 0.4519434869289398,
+        "area_px": 10046,
+        "valid_points": 8766,
+        "median_range_m": 0.4140627980232239,
+        "median_z_m": 0.1853438913822174,
+        "range_p10_p90_m": [
+          0.2821955233812332,
+          0.6136390864849091
+        ],
+        "touches_border": true
+      },
+      {
+        "instance": 0,
+        "score": 0.7091149687767029,
+        "area_px": 13758,
+        "valid_points": 12355,
+        "median_range_m": 0.41693541407585144,
+        "median_z_m": 0.2779470682144165,
+        "range_p10_p90_m": [
+          0.2898666739463806,
+          0.6155160665512085
+        ],
+        "touches_border": false
+      },
+      {
+        "instance": 2,
+        "score": 0.6767575144767761,
+        "area_px": 10635,
+        "valid_points": 9284,
+        "median_range_m": 0.604149341583252,
+        "median_z_m": 0.3768264055252075,
+        "range_p10_p90_m": [
+          0.5224314510822297,
+          0.8022553443908691
+        ],
+        "touches_border": false
+      },
+      {
+        "instance": 3,
+        "score": 0.6901054978370667,
+        "area_px": 6070,
+        "valid_points": 5354,
+        "median_range_m": 1.0138177871704102,
+        "median_z_m": 0.5599265098571777,
+        "range_p10_p90_m": [
+          0.7465752422809601,
+          1.3730791091918946
+        ],
+        "touches_border": true
+      }
+    ],
+    "intent": {
+      "instance": 1,
+      "score": 0.4519434869289398,
+      "area_px": 10046,
+      "valid_points": 8766,
+      "median_range_m": 0.4140627980232239,
+      "median_z_m": 0.1853438913822174,
+      "range_p10_p90_m": [
+        0.2821955233812332,
+        0.6136390864849091
+      ],
+      "touches_border": true
+    },
+    "frame_id": "cam10_optical_frame",
+    "projection_rotation": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "plane_or_pose_rejection": "plane inlier ratio 0.568 below 0.75"
+  }
+}

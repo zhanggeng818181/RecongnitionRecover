@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.18)
+project(alignment_sam3 LANGUAGES CXX CUDA)
+set(CMAKE_CXX_STANDARD 17)
+add_subdirectory(../third_party/sam3-deployment/demo sam3-upstream)
+add_executable(sam3_export main.cpp)
+target_link_libraries(sam3_export PRIVATE trtsam_core)

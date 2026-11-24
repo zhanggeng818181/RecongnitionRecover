@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>cam10_evt</name><version>0.1.0</version>
+  <description>EVT geometry reference for cam10 suction alignment</description>
+  <maintainer email="robotics@example.invalid">Robotics team</maintainer>
+  <license>Proprietary</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>
