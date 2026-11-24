@@ -21,3 +21,15 @@ build/
 archive/
 data/input/
 data/mainline-cache/
+
+# Local datasets, generated bundles and machine-specific binaries
+/data/*
+!/data/raw/
+!/data/selected/
+!/data/calibration/
+/dist/
+/deployment/thor/build/
+.env.*
+!.env.example
+*.pem
+*.key

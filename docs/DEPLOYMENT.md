@@ -25,3 +25,5 @@ python -m http.server 18788 --bind 127.0.0.1 --directory outputs/first-run
 给同事打包仅需 cam10_alignment、cpp、configs、robot、tests、docs、README.md、pyproject.toml。权重、TensorRT 引擎和 third_party 另外按固定版本部署，原始数据/outputs/archive 不需要复制。执行 tools/package_mainline.py 可生成不含旧功能和大模型的代码包。
 
 实时接口尚需现场完成：硬件曝光时间同步、cam10 optical 外参、吸盘接触系与尺寸、尺度验证、预吸附距离，以及控制端轨迹与压力状态机。本仓库的 UDP/TCP/ROS 控制发送端有意留空，交接格式是可审查 JSON。
+
+含模型的 Thor 交付包及逐步视频流接入说明见 [REAL_MACHINE_PACKAGE.md](REAL_MACHINE_PACKAGE.md)。执行 `python tools/package_deployment.py` 可重新生成完整应用包。

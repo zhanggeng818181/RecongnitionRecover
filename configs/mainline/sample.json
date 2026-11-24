@@ -1,0 +1,96 @@
+{
+  "project_root": "../..",
+  "input": {
+    "mode": "replay",
+    "source": "data/input/cam10_sample.mp4",
+    "clock": "replay_seconds",
+    "timestamp_origin_s": 0,
+    "stride": 6,
+    "start_frame": 0,
+    "end_frame_inclusive": null,
+    "joint_states": null,
+    "stop_file": null,
+    "max_observations": 3,
+    "max_frame_age_s": 0.5
+  },
+  "camera": {
+    "id": "cam10",
+    "frame_id": "cam10_optical",
+    "projection": "rectified_pinhole",
+    "image_size": [
+      256,
+      256
+    ],
+    "K_pixels": [
+      [
+        59.68738024383982,
+        0,
+        127.5
+      ],
+      [
+        0,
+        59.68738024383982,
+        127.5
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "intrinsics_verified": false
+  },
+  "models": {
+    "backend": "trt",
+    "moge_weights": "models/moge-2-vitl/model.pt",
+    "device": "cuda",
+    "resolution_level": 5,
+    "sam_executable": "build/sam3_export",
+    "sam_engines": "models/sam3",
+    "sam_tokenizer": "third_party/sam3-deployment/assets/tokenizer.json",
+    "prompt": "box",
+    "worker_timeout_s": 120
+  },
+  "fusion": {
+    "suction_edge_fraction": 0.625,
+    "plane_threshold_model_units": 0.01,
+    "min_plane_pixels": 150,
+    "max_prediction_seconds": 0.4,
+    "selection_roi_fraction": [
+      0.25,
+      0.3125,
+      0.75,
+      0.625
+    ],
+    "min_roi_coverage": 0.12,
+    "ambiguity_ratio": 0.85,
+    "confirmation_observations": 3
+  },
+  "robot": {
+    "urdf": "robot/evt/robot.urdf",
+    "urdf_sha256": "1b06e1bd457e1bbdbf2956f46d3401c9586e0e3c0828e0e3e106059cd5954ca8",
+    "base_link": "base_link",
+    "flange_link": "flange_Link",
+    "joint_order": [
+      "shoulder_y",
+      "upper_arm_p",
+      "elbow_p",
+      "lower_arm_y",
+      "wrist_p",
+      "flange_y"
+    ],
+    "cam10_urdf_link": null,
+    "suction_urdf_link": "suction_cup_Link",
+    "T_flange_cam10_optical": null,
+    "T_flange_suction_contact": null,
+    "depth_scale_to_m": null,
+    "standoff_m": null,
+    "suction_size_m": null,
+    "edge_margin_m": 0.01,
+    "max_state_age_s": 0.1,
+    "calibration_verified": false
+  },
+  "output": {
+    "preview_fps": 5
+  }
+}

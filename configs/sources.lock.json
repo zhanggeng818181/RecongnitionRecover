@@ -16,6 +16,6 @@
     "checkpoint": "Ruicheng/moge-2-vitl",
     "checkpoint_revision": "39c4d5e957afe587e04eec59dc2bcc3be5ecd968",
     "checkpoint_sha256": "3eefd4abb2102f38f12b2d1992e5ff15e4923e5431c67dd494afe157e0111cd5",
-    "note": "MoGe v2 code before MoGe-3 dependencies; weights must be downloaded separately"
+    "note": "Weights are included in the with-models deployment bundle; excluded from the code-only bundle."
   }
 }
